@@ -1,0 +1,22 @@
+i = 1
+N = int(input("Ener a Number:"))
+while(i < N):
+    temp = i
+    if(i%7 == 0): # if N is equal to 7 x numbers untill N
+        print("BooM")
+        i+=1
+
+    while(temp>10 or temp == 7):
+        if temp == 7:
+            print("BooM")
+            i+=1
+            break
+        else:
+            temp %= 10
+
+    else:
+        print(i)
+        i+=1
+        
+        
+    
