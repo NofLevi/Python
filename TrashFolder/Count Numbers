@@ -1,0 +1,10 @@
+nums = []
+while True:
+    print("Enter a Number:")
+    x = input()
+    if x == '':
+        break
+    else:
+        nums.append(float(x))
+        sum1 = sum(nums)
+        print(f"The sum is: {sum1}")
