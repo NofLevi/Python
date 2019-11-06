@@ -1,0 +1,18 @@
+import random
+myNumber = random.randint(1,10)
+flag = 0
+while flag == 0:
+    print('Please guess a Number 1 - 10')
+    Number = int(input())
+    while Number >10 or Number < 1:
+        print("Error404: Enter number between 1-10")
+        Number = int(input())
+    if Number ==  myNumber:
+        print("GODLIKE")
+        flag = 1
+    elif Number > myNumber:
+        print('zu hoch!!!')
+    else:
+        print("zu kurz!!!")
+    
+
