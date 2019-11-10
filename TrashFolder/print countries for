@@ -1,0 +1,6 @@
+Countries = {"Israel" : "Jerusalem",
+             'Germany' : 'Berlin',
+             'France' : 'Paris',
+             'Uunited Kingdom' : 'London'}
+for i in Countries:
+    print("Country:" +Countries[i])
