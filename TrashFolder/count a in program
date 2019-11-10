@@ -1,0 +1,14 @@
+st = ""
+tempst = ""
+count = 0
+i = 0
+while tempst != "***":
+    tempst = input("Enter a string: ")
+    st += tempst
+    while i < len(st):
+        if st[i] == 'a':
+            count+=1
+        i+=1  
+    
+print(count)
+    
