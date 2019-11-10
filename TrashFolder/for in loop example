@@ -1,0 +1,7 @@
+start = int(input("Enter Begginning: "))
+end = int(input("Enter the end: "))
+sum = 0
+for i in range(start,end):
+    if i%7 == 0:
+        sum+=i
+print(sum)
