@@ -1,0 +1,40 @@
+x = int(input("How many quadratic equation solution do u want:")) #asking how many string he want
+
+a = [x]
+b = [x]
+c = [x]
+
+nosol = 0
+singlesol = 0
+twosol = 0
+
+for i in range(x): #taking the amount of equations
+    print("Enter the: " + str(i+1) +" Equation:")
+    a[i] = int(input("Enter your a:"))
+    b[i] = int(input("Enter your b:"))
+    c[i] = int(input("Enter your c:"))
+
+for i in range(0,x):
+    delta = b[i]**2 - (4 * a[i] * c[i])
+    if(delta > 0):
+        twosol += 1
+        ans1 = (-b[i] + (delta ** 0.5))/2*a[i]
+        ans2 = (-b[i] - (delta ** 0.5))/2*a[i]
+        print("ans 1 is:" + ans1)
+        print("ans 2 is:" + ans2)
+       
+        
+    elif(delta == 0):
+        singlesol += 1
+        ans1 = -b[i] / 2*a
+        print("single solution ans is:" + ans1)
+        
+
+    else:
+        nosol += 1
+        print("No Solution")
+
+print("The equations has:")
+print("No Solution:" + nosol)
+print("Single solution:" + singlesol)
+print("Two Solutions:" + twosol)
