@@ -1,0 +1,13 @@
+import sys
+i = 0
+j = 0
+limit = int(input("Enter a number:"))
+while(i < limit):
+    i+=1
+    j = 1
+    print()
+    while(j <= limit):
+        sys.stdout.write(str(i*j) + ' ')
+        j+=1
+
+        
