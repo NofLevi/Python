@@ -1,0 +1,12 @@
+text = 'how are u'
+key = int(input("Enter The Caesar Key:"))
+abc = 'abcdefghijklmnopqrstuvwxyz'
+for i in range(len(abc)):
+    if abc[i]!= " ":
+         if i+key>len(abc):
+            temp = (i+key) - len(abc)
+            abc[i],abc[temp] = abc[temp] , abc[i]
+
+         else:
+            abc[i],abc[i+key] = abc[i+key],abc[i]
+
