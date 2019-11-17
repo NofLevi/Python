@@ -1,0 +1,15 @@
+def max_two(x,y):
+    if x > y:
+        return x
+    return y
+
+
+def max_three(x,y,z):
+    highest = max_two(x,y)
+    highest = max_two(highest,z)
+    return highest
+
+def main():
+    x,y,z = 3,1,2
+    print(max_three(x,y,z))
+main()
