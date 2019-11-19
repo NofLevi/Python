@@ -1,0 +1,12 @@
+import winsound
+import time
+bpm = 120
+dt = 60 / bpm
+try:
+    while(True):
+        winsound.Beep(440, 1000) #doing beep [first is volume and second is how long] long
+        time.sleep(dt - 0.25) # making delay between beeps
+except KeyboardInterrupt:
+    print("Good Bye" + str(time.time())) #time.time showing the time since 1970 
+    #u can use elapse time by start_time - time.time(0
+    
