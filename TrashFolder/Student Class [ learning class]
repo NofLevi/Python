@@ -1,0 +1,19 @@
+class Student:
+    def enter_details(self,name,lname,byear):
+        self.first_name = name
+        self.last_name = lname
+        self.birth_year = byear
+
+    def print_details(self):
+        print("Student Number:" + "0")
+        print("Student Full Name:" + self.first_name + " " + self.last_name)
+        print("Birth Year:" + self.birth_year)
+        
+
+stud = Student()
+name = input("Name:")
+lname = input("Last Name:")
+byear = input("Birth Year:")
+stud.enter_details(name,lname,byear)
+
+stud.print_details()
