@@ -1,6 +1,4 @@
 def makeList(n):
-    ls = []
-    x = 0
     ls =  [[j+1 for j in range(i)] for i in range(1,n+1)]
     return ls
     
