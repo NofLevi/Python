@@ -1,11 +1,9 @@
+
 def createMatrix(ls):
-    mat = [x for x in range(3)] * 3
+    mat = [[x for x in range(ls)]] * ls
     return mat
     
 def main():
-    size = input("Enter the size of the mat:")
+    size = int(input("Enter the size of the mat:"))
     print(createMatrix(size))
 main()
-
-
-
