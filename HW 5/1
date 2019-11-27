@@ -1,0 +1,12 @@
+def func(ls1,ls2):
+    if all(x in ls1 for x in ls2):
+        return True
+    return False
+
+def main():
+    ls1 = [[2,3,1],[4,5],[6,8]]
+    ls2 = [[4,5],[6,8]]
+    print(func(ls1,ls2))
+main()
+
+
