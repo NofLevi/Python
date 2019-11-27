@@ -1,0 +1,16 @@
+def findMaxLength(ls):
+    maxi = 0
+    st = ""
+    for x in ls:
+        if maxi < len(x):
+            maxi = len(x)
+            st = x
+    return maxi,st
+    
+def main():
+    ls = [['A'],['A','B'],['A','B','C'],['A']]
+    print(findMaxLength(ls))
+main()
+
+
+
