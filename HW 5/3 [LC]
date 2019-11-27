@@ -1,6 +1,6 @@
 
-def createMatrix(ls):
-    mat = [[x for x in range(ls)]] * ls
+def createMatrix(size):
+    mat = [[x for x in range(size)]] * size
     return mat
     
 def main():
