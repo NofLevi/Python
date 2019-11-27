@@ -1,0 +1,15 @@
+def selectSort(ls):
+    for i in range(len(ls)):
+        index = 0
+        mini = 500
+        for j in range(i,len(ls)):
+            if(ls[j] < mini):
+                mini = ls[j]
+                index = j;
+        ls[i],ls[index] = ls[index],ls[i]
+    return ls
+            
+
+
+ls = [17,5,32,10,15,30,4]
+print(selectSort(ls))
