@@ -2,7 +2,7 @@ def createMatrix(size):
     mat = []
     for i in range(size):
         mat.append(i)
-    return mat*3
+    return mat*size
 
 
 
