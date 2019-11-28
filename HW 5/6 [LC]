@@ -1,0 +1,7 @@
+def flattenLst6(mat):
+    newmat = []
+    newmat = [planet for sublist in mat for planet in sublist if len(planet) < 6]
+    return newmat
+
+planets = [['Mercury','Venus','Earth'],['Mars','Jupiter','Saturn'],['Uranus','Nepture','Pluto']]
+print(flattenLst6(planets))
