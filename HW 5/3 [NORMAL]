@@ -1,0 +1,10 @@
+def createMatrix(size):
+    mat = []
+    for i in range(size):
+        mat.append(i)
+    return mat*3
+
+
+
+size = int(input("Enter a size:"))
+print(createMatrix(size))
