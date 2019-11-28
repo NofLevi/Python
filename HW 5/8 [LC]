@@ -1,0 +1,6 @@
+def wordLenList(s,w):
+    s = list(s.split(" "))
+    ls = [len(word) for word in s if word != w]
+    return ls
+
+print(wordLenList("the quick brown fox jumps over the lazy dog","the"))
