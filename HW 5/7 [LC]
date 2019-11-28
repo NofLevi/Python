@@ -1,5 +1,5 @@
 def even(num):
-    while(num%10 != num): 
+    while(num > 1): 
         temp = num % 10
         if temp % 2 != 0:
             return False
