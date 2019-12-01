@@ -1,0 +1,7 @@
+def func(ls):
+    x = set(ls)
+    return x
+
+
+ls = [1,2,3,4,5,1,2,3,4,5]
+print(func(ls))
