@@ -1,0 +1,22 @@
+def func(dic):
+    highestavg = 0
+    highestname = ""
+    for x,y in dic.items():
+        summ = 0
+        length = 0
+        for num in y:
+            summ += num
+            length+=1
+        if (summ/length) > highestavg:
+            highestavg = summ/length
+            highestname = x
+        print(summ/length)
+    return "the highest avg is: " + str(highestname) + " with score of:" + str(highestavg)
+
+
+
+
+def main():
+    dic = {"student1":[1,2,3,4],"student2":[9,8,7,6]}
+    print(func(dic))
+main()
