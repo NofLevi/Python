@@ -2,7 +2,6 @@ def func(ls):
     templs = []
     for i in ls:
         templs.append(list((set(i))))
-        templs
     ls = templs
     return ls
 
