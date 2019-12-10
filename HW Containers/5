@@ -1,8 +1,7 @@
 def func(prices):
     total = 0
     cart_shopping = dict()
-    flag = 0
-    while(flag == 0):
+    while(True):
         product = input("Enter a product name [enter DONE to stop buying]:")
         if product == "DONE":
             break;
@@ -14,8 +13,6 @@ def func(prices):
             cart_shopping[product] = amount
     return str(total) + " Israeli Shekels"
         
-
-
 def main():
     prices = {
       "apple": 1,
