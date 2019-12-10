@@ -3,8 +3,6 @@ def func(prices):
     cart_shopping = dict()
     flag = 0
     while(flag == 0):
-        product = "null"
-        amount = 0
         product = input("Enter a product name [enter DONE to stop buying]:")
         if product == "DONE":
             break;
