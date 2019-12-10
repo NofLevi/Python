@@ -1,0 +1,27 @@
+def func(prices):
+    total = 0
+    cart_shopping = dict()
+    flag = 0
+    while(flag == 0):
+        product,amount = input("Enter Product and Amount of it:").split()
+        if product not in prices:
+            print("The Product:" + product + "not exist in the shop. try other product")
+        if product == null:
+            flag = 1
+        else:
+            total += amount * prices[product].value()
+            cart_shopping[product] = amount
+    return total + "ils"
+        
+
+
+def main():
+    prices = {
+      "apple": 1,
+      "kiwi": 2,
+      "melon": 3,
+      "lemon": 4,
+      "strawberry": 5
+}
+    print(func(prices))
+main()
