@@ -1,0 +1,14 @@
+def func(st):
+    st = st.split()
+    mydict = dict()
+    for word in st:
+        if word not in mydict:
+            mydict[word] = 1
+        else:
+            mydict[word] += 1
+    return [(x,y)for x, y in mydict.items()]
+
+def main():
+    st = "Hello Hello World World World how are u"
+    print(func(st))
+main()
