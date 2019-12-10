@@ -3,15 +3,18 @@ def func(prices):
     cart_shopping = dict()
     flag = 0
     while(flag == 0):
-        product,amount = input("Enter Product and Amount of it:").split()
+        product = "null"
+        amount = 0
+        product = input("Enter a product name [enter DONE to stop buying]:")
+        if product == "DONE":
+            break;
+        amount = input("Enter the amount of the product:")
         if product not in prices:
             print("The Product:" + product + "not exist in the shop. try other product")
-        if product == null:
-            flag = 1
         else:
-            total += amount * prices[product].value()
+            total += int(amount) * prices[product]
             cart_shopping[product] = amount
-    return total + "ils"
+    return str(total) + " Israeli Shekels"
         
 
 
