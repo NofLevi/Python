@@ -1,0 +1,12 @@
+def isPalindrome(s):
+    length = len(s)
+    if length == 1 or 0:
+        return True;     
+    if(s[0] == s[length-1]):
+        return isPalindrome(s[1:length-1])
+    else:
+        return False
+
+def main():
+    print(isPalindrome("madam"))
+main()
