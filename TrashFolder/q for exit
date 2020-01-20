@@ -1,0 +1,19 @@
+def func(ls):
+    summ = 0;
+    while(True):
+        bol = True
+        n = input("Enter a num or q to finish")
+        if(n == 'q'):
+            return summ/len(ls)
+        try:
+            n = int(n)
+        except ValueError:
+            print("Enter a number or q mdfka")
+            bol = False
+
+        if bol == True:
+            summ+=n
+            ls.append(n)
+ls = []
+print(func(ls))
+            
