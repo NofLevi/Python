@@ -1,0 +1,32 @@
+def enc(st,k):
+    dic = dict()
+    newst = ""
+    # making the dict 
+    for i in range(26):
+        temp = i+k+97
+        if temp > 122:
+           temp = temp - 122 + 97
+        dic[chr(i+97)] = chr(temp)
+        
+    # encrypting
+    for c in st:
+        if c in dic:
+            newst += dic[c]
+        else:
+            newst += c
+    return newst
+        
+
+
+
+
+def main():
+    st = input("Enter String to encrypt:")
+    k = int(input("Enter the jumps:"))
+    st = enc(st,k)
+    print("Encrypted string is:" + st)
+    st = enc(st,-k)
+    print("Decrypted string is:" + st)
+    
+    
+main()
