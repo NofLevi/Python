@@ -1,53 +1,18 @@
-def Encryption(st):
-    thisdict = dictBuilder()
-    for i in st:
-        if(thisdict[i]):
-            i = thisdict[i]
-    return st
-            
-def Decryption(st):
-    thisdict = dictBuilder()
-    for i in st:
-        if(thisdict[i]):
-            i = thisdict[i]
-    return st
-    
-def dictBuilder():
-        thisdict = {
-          "a": "z",
-          "b": "y",
-          "c": "x",
-          "d": "w",
-          "e": "v",
-          "f": "u",
-          "g": "t",
-          "h": "s",
-          "i": "r",
-          "j": "q",
-          "k": "p",
-          "l": "o",
-          "m": "n",
-          "z": "a",
-          "y": "b",
-          "x": "c",
-          "w": "d",
-          "v": "e",
-          "u": "f",
-          "t": "g",
-          "s": "h",
-          "r": "i",
-          "q": "j",
-          "p": "k",
-          "o": "l",
-          "n": "m",
-        }
-        return thisdict
-
+def func(st):
+    m=dict()
+ #   g={'A','B','C'}
+    for i in range(26):
+        m[chr(ord('A')+i)]=chr(ord('Z')-i)
+    nst=''
+    for ch in st:
+        if ch in m:
+            nst+=m[ch]
+        else:
+            nst+=ch
+    return nst
 def main():
-    st = input("Enter A String: ")
-    st1 = Encryption(st)
-    print("Encrypted =  " + st1)
-    st2 = Decryption(st1)
-    print("Decrypted =  " + st2)
-
+    st='ALL YOU NEED IS LOVE'
+    temp=func(st)
+    print(temp)
+    print(func(temp))
 main()
