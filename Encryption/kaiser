@@ -22,6 +22,7 @@ def enc(st,k):
 
 def main():
     st = input("Enter String to encrypt:")
+    st = st.lower();
     k = int(input("Enter the jumps:"))
     st = enc(st,k)
     print("Encrypted string is:" + st)
