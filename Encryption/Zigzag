@@ -1,0 +1,29 @@
+def enc(st):
+    st = st.replace(" ", "")
+    st1 = ""
+    st2 = ""
+    for i in range(len(st)):
+        if i%2 == 0:
+            st1 += st[i]
+        else:
+            st2 += st[i]
+    return st1+st2
+
+def dec(st):
+    newst = ""
+    half = len(st)//2
+    for i in range(half):
+        newst += st[i]
+        if(half+i < len(st)):
+            newst+= st[half+i]
+    return newst
+    
+
+
+def main():
+    st = input("Enter a string to encrypt: ")
+    st = enc(st)
+    print(st)
+    st = dec(st)
+    print(st)
+main()
